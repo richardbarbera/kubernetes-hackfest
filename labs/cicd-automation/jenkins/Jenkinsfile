@@ -3,7 +3,7 @@ def  feSvcName = "${appName}"
 def  ACRPATH = 'hackfest'
 def  ACRNAME = 'acrhackfestbarbera2393'
 def  ACRURL = 'azurecr.io'
-def  imageTag = "${env.BRANCH_NAME}"
+def  imageTag = "${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
 
 pipeline {
   agent {
